@@ -1,0 +1,13 @@
+version: '3'
+services:
+  website:
+    build: .
+    ports:
+      - "80:80"
+    restart: always
+
+  todo:
+    image: todolistme/todo
+    ports:
+      - "8080:80"
+    restart: always
