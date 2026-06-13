@@ -2,11 +2,11 @@ services:
   website:
     build: .
     ports:
-      - "80:80"
+      - "8090:80"
     restart: always
 
   todo:
     image: louislam/uptime-kuma:1
     ports:
-      - "8080:3001"
+      - "8091:3001"
     restart: always
