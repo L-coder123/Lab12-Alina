@@ -6,7 +6,7 @@ services:
     restart: always
 
   todo:
-    image: ulisesantana/track
+    image: louislam/uptime-kuma:1
     ports:
-      - "8080:3000"
+      - "8080:3001"
     restart: always
